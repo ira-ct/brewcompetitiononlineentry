@@ -16,6 +16,7 @@ $languages = array(
     "cs-CZ" => "Czech",
     "en-US" => "English (US)",
     "fr-FR" => "French",
+    "it-IT" => "Italiano",
     "es-419" => "Spanish (Latin America)"
 );
 
@@ -625,6 +626,7 @@ $club_array = array(
     "Buffalo Brewers",
     "Buffalo Originated Craft Brewers",
     "Bull Falls Homebrew Club",
+    "Bulgarian Homebrewers Association (Bulgaria)",
     "Burgh Brewers Cooperative",
     "Burlington MOB (makers of Beer)",
     "Burning Rabbit Home Brew Club",
@@ -2211,6 +2213,7 @@ $club_array = array(
     "TriCities Beer Alliance",
     "Tricities Brew Club",
     "Tri-County Fermenters",
+    "Trinacria Homebrewers (Italy)",
     "Trout Gulch Brewers",
     "Trub Grubbers",
     "Trubmeisters Homebrew Club",
