@@ -1,0 +1,31 @@
+<?php
+$list_help_title = "Aiuto Account Personale";
+$list_help_body = "<p>Questa è una panoramica completa delle informazioni del tuo account.</p>";
+$list_help_body .= "<p>Qui puoi visualizzare le tue informazioni personali inclusi nome, indirizzo, numero/i di telefono, club, numero di membro AHA, ID BJCP, grado di giudice BJCP, preferenze di valutazione e preferenze di stewarding.</p>";
+$list_help_body .= "<ul>";
+$list_help_body .= "<li>Seleziona il pulsante “Modifica Account” per aggiornare le tue informazioni personali.</li>";
+$list_help_body .= "<li>Seleziona il pulsante “Cambia Email” per aggiornare il tuo indirizzo email. <strong>Nota:</strong> il tuo indirizzo email è anche il tuo nome utente.</li>";
+$list_help_body .= "<li>Seleziona il pulsante “Cambia Password” per aggiornare la password del tuo account.</li>";
+$list_help_body .= "</ul>";
+$list_help_body .= "<p>In fondo alla pagina c'è il tuo elenco di iscrizioni.</p>";
+$list_help_body .= "<ul>";
+$list_help_body .= "<li>Seleziona l'icona della stampante <span class=\"fa fa-print\"></span> per stampare la documentazione necessaria per ogni iscrizione (etichette bottiglia, ecc.).</li>";
+$list_help_body .= "<li>Seleziona l'icona della matita <span class=\"fa fa-pencil\"></span> per modificare l'iscrizione.</li>";
+$list_help_body .= "<li>Seleziona l'icona del cestino <span class=\"fa fa-trash-o\"></span> per eliminare l'iscrizione.</li>";
+$list_help_body .= "</ul>";
+$brewer_acct_edit_help_title = "Aiuto Modifica Account";
+$brewer_acct_edit_help_body = "<p>Qui puoi aggiornare le informazioni del tuo account inclusi indirizzo/telefono, numero di membro AHA, ID BJCP, grado di giudice BJCP, disponibilità e preferenze di sede per la valutazione o lo stewarding, e così via.";
+$username_help_title = "Aiuto Cambio Indirizzo Email";
+$username_help_body = "<p>Qui puoi cambiare il tuo indirizzo email.</p>";
+$username_help_body .= "<p><strong>Nota bene:</strong> il tuo indirizzo email serve anche come nome utente per accedere al tuo account su questo sito.</p>";
+$password_help_title = "Aiuto Cambio Password";
+$password_help_body = "<p>Qui puoi cambiare la tua password di accesso a questo sito. Più è sicura, meglio è – includi caratteri speciali e/o numeri.</p>";
+$pay_help_title = "Aiuto Pagamento Quote di Iscrizione";
+$pay_help_body = "<p>Questa schermata mostra in dettaglio le tue iscrizioni non pagate e le relative quote. Se gli organizzatori della competizione hanno designato uno sconto per i partecipanti con un codice, puoi inserire il codice prima di pagare le tue iscrizioni.</p>";
+$pay_help_body .= "<p>Per ".$_SESSION['contestName'].", i metodi di pagamento accettati sono:</p>";
+$pay_help_body .= "<ul>";
+if ($_SESSION['prefsCash'] == "Y") $pay_help_body .= "<li><strong>Contanti.</strong> Metti i contanti in una busta e attaccala a una delle tue bottiglie. Per favore, per la sanità mentale dello staff organizzativo, non pagare con monete.</li>";
+if ($_SESSION['prefsCheck'] == "Y") $pay_help_body .= "<li><strong>Assegno.</strong> Fai il tuo assegno intestato a ".$_SESSION['prefsCheckPayee']." per l'importo totale delle tue quote di iscrizione, mettilo in una busta e attaccalo a una delle tue bottiglie. Sarebbe estremamente utile per lo staff della competizione se elenchi i tuoi numeri di iscrizione nella sezione promemoria.</li>";
+if ($_SESSION['prefsPaypal'] == "Y") $pay_help_body .= "<li><strong>Carta di Credito/Debito tramite PayPal.</strong> Per pagare le tue quote di iscrizione con una carta di credito o debito, seleziona il pulsante “Paga con PayPal”. Non è necessario un account PayPal. Dopo aver pagato, assicurati di cliccare sul link “Ritorna a...” nella schermata di conferma di PayPal. Questo assicurerà che le tue iscrizioni siano contrassegnate come pagate per questa competizione.</li>";
+$pay_help_body .= "</ul>";
+?>
